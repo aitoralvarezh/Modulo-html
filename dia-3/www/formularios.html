@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/audio.html">Audio</a></li>
+                <li><a href="/imagenes.html">Imágenes</a></li>
+                <li><a href="/video.html">Video</a></li>
+                <li><a href="/formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="formularios.html" method="post">
+       
+        <fieldset>
+            <legend>Datos personales</legend>
+                <ul>
+                    <li>
+                        <label>nombre
+                            <input id="nombre" type="text" name="nombre" placeholder="escribe aqui"></label>
+                        </label>
+                    </li>
+                    <li>
+
+                       <label>
+                            correo
+                            <input type="email" required name="correo" placeholder="escribe aqui">
+                        </label>
+                    </li> 
+                    <li>
+                        <label>
+                            contraseña
+                            <input type="password"  required placeholder="escribe aqui">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                        Foto
+                            <input type="file" name="foto">
+                         </label>
+                    </li>
+                    <li>
+                    
+                        <label>
+                            fecha de nacimiento
+                            <input type="date" required>
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                    
+                        <label>
+                            comentario <br>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="escribe aqui"></textarea>
+                        </label>
+                    </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Estudios e intereses</legend>
+             <p>Estudios</p>
+             <ul>
+                <li>
+                    <label>
+                       E.S.O
+                       <input type="radio" name="estudios" value="eso">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                       F.P
+                        <input type="radio" name="estudios" value="fp">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Grado
+                        <input type="radio" name="estudios" value="grado">
+                    </label>
+                </li>
+                <p>Intereses</p>
+            </ul>
+            
+           <li>
+               <label>
+                    Cine
+                    <input type="checkbox" name="Cine">
+                </label>
+            </li>
+            <li>
+                <label>
+                     Series
+                     <input type="checkbox" name="Cine">
+                 </label>
+             </li>
+             <li>
+                <label>
+                     Música
+                     <input type="checkbox" name="Cine">
+                 </label>
+             </li>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la revista</legend>
+            <select name="frecuencia">
+                <option>elige</option>
+                <option value="semanal">semanal</option>
+                <option value="quincenal">quincenal</option>
+                <option value="mensual">mensual</option>
+            </select>
+        </fieldset>
+        <button type="submit">enviar</button>
+        <button type="reset">borrar</button>
+    </form>
+</body>
+</html>
